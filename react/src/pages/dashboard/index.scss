@@ -1,0 +1,83 @@
+
+@import './../../styles/colors';
+
+.dashboard__page-conatiner {
+    color: $pureBlack;
+    width: 100%;
+    height: calc( 100vh - 16rem);
+    .side-panel{
+      position: fixed;
+      width: 3.5rem;
+      max-width: 3.5rem; 
+    }
+    .main-body{
+      margin-left: 3.5rem;
+      height: 100vh;
+      background: $greyLight;
+      @media only screen and (max-width: 480px) {
+        overflow: auto;
+      }
+    }
+    .fab-btn{
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background: #1276fa;
+        border: navajowhite;
+        cursor: pointer;
+        position: fixed;
+        font-size: 42px;
+        bottom: 2rem;
+        right: 2rem;
+        color: $textColor;
+        z-index: 1;
+        &:focus{
+            outline: none;
+        }
+    }
+   
+    .dashboard__message-wrapper {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        TaskBoard{
+            flex: 1;
+        }
+    }
+    .main-task-board{
+        div{
+            width: 100%;
+        }
+        .smooth-dnd-container.horizontal{
+          white-space: unset;
+            section{
+                h4{
+                    margin: 10px 0;
+                }
+            }
+            .react-trello-lane{
+                margin: 5px 10px;
+                padding: 15px;
+                width: 23.6% !important;
+                @media only screen and (max-width: 480px) {
+                  width: 95% !important;
+                }
+                .sc-fzoLsD{
+                  min-width: 100% !important;
+                  max-height: 70vh;
+                  @media only screen and (max-width: 480px) {
+                    max-height: 50vh;
+                  }
+                }
+            }
+        }
+    }
+}
+
+.spinner{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  font-size: 50px;
+}

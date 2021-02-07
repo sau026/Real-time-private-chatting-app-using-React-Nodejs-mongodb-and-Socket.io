@@ -1,0 +1,47 @@
+@import './../../styles/colors';
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: #5b57b7;
+    padding: 0;
+    div{
+        &:first-child{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+            .icon{
+                font-size: 18px;
+                color: #fff;
+                margin-bottom: 30px;
+                &:first-child{
+                    margin-bottom: 50px;
+                }
+                &:nth-child(6){
+                    margin-bottom: 20px;
+                }
+                &:last-child{
+                    background: #0c0a2229;
+                    width: 96%;
+                    padding: 13px 0px;
+                    border-left: 2px solid #00ffd2;
+                }
+            }
+        }
+        &:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 25px;
+            .icon{
+                font-size: 18px;
+                color: #fff;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
